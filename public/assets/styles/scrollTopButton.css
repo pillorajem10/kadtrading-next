@@ -1,0 +1,63 @@
+.scrollContainer,
+.productDetailsScrollContainer,
+.ratingScrollContainer {
+  position: fixed;
+  right: -100px;
+  bottom: 20px;
+  transition: right 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  z-index: 101;
+}
+
+.scrollContainer:focus,
+.productDetailsScrollContainer:focus,
+.ratingScrollContainer:focus {
+  outline: none;
+}
+
+.scrollContainer div,
+.productDetailsScrollContainer div,
+.ratingScrollContainer div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.scrollContainer img,
+.productDetailsScrollContainer img,
+.ratingScrollContainer img {
+  height: 50px;
+}
+
+.scrollContainer p,
+.productDetailsScrollContainer p,
+.ratingScrollContainer p {
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 1.78;
+  letter-spacing: 1.5px;
+  color: rgba(0, 0, 0, 0.87);
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+
+.scrollTransition {
+  right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .productDetailsScrollContainer {
+    bottom: 105px;
+  }
+
+  .scrollContainer {
+    bottom: 40px;
+  }
+
+  .ratingScrollContainer {
+    bottom: 85px;
+  }
+}
